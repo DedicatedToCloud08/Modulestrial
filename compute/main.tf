@@ -31,7 +31,7 @@ resource "aws_instance" "amazon_linux" {
   disable_api_termination = local.termination_protection
   key_name = aws_key_pair.key.key_name
   vpc_security_group_ids = [ var.sg_id ]
-   user_data = <<-EOF
+  user_data = <<-EOF
 #!/bin/bash
 yum update -y
 amazon-linux-extras install nginx1 -y
