@@ -4,6 +4,7 @@ module "network" {
   environment = var.environment
   availability_zone_tail = var.availability_zone_tail
   subnet_cidr = var.subnet_cidr
+  region = var.region
 }
 
 module "security" {
