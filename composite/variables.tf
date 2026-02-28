@@ -5,7 +5,7 @@ variable "vpc_cidr" {
 variable "environment" {
   type = string
     validation {
-    condition = contains(["dev","prod"],var.enviroment)
+    condition = contains(["dev","prod"],var.environment)
     error_message = "Lavdya prod kivha Dev taak mc"
   }
 }
