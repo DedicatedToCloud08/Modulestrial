@@ -35,7 +35,7 @@ resource "aws_instance" "amazon_linux" {
                 #!/bin/bash
                 yum update -y
                 yum install nginx -y
-                sytemctl start ngnix
+                sytemctl start nginx
                 systemctl enable nginx
                 EOF
     tags = {
